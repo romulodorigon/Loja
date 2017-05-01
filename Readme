@@ -3,3 +3,4 @@ Iniciando o projeto "Crie sua loja online com CDI, JSF, JPA" da Alura
 - Projeto Montado com Jboss Forge
 2017-05-01 00:18 - Criação do arquivo form.xhtml e das classes Livros e AdminLivrosBean ( video 3:capitulo 1)
 2017-05-01 13:07 - Criação do persistence.xml, alteração da classe Livro para uma entidade mapeada ( video 4:capitulo 1)
+2017-05-01 14:13 - Configurado arquivo standalone-full do server com as propriedades de conexão com o DB,criado module para mysql, criação do DB ( video 5:capitulo 1)

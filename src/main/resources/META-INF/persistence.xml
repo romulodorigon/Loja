@@ -15,11 +15,7 @@
 		<jta-data-source>java:jboss/datasources/casadocodigoDS</jta-data-source>
 
 		<properties>
-			<!-- dados da conexao -->
-			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/fj21" />
-			<property name="javax.persistence.jdbc.user" value="root" />
-			<property name="javax.persistence.jdbc.password" value="" />
+			<!-- dados da conexao no arquivo do servidor standaloneful -->
 
 			<!-- propriedades do hibernate -->
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />

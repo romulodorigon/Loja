@@ -3,17 +3,28 @@ package br.com.casadocodigo.loja.models;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+
 /**
  * 
  * @author romulo
  * @description Classe modelo de Livro
  * @date 2017.05.01
  */
+@Entity
 public class Livro implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
 	private String titulo;
+	@Lob
 	private String descricao;
 	private BigDecimal preco;
 	private Integer numeroDePaginas;
@@ -97,5 +108,13 @@ public class Livro implements Serializable {
 
 	public void setNumeroDePaginas(Integer numeroDePaginas) {
 		this.numeroDePaginas = numeroDePaginas;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 }

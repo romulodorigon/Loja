@@ -10,7 +10,7 @@ import br.com.casadocodigo.loja.models.Livro;
 /**
  * 
  * @author romulo
- * @description DAO Livro
+ * @description DAO de Livro
  * @date 2017.05.01
  *
  */

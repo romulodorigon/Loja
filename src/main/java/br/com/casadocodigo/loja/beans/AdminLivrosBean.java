@@ -35,13 +35,17 @@ public class AdminLivrosBean {
 	private List<Integer> autoresId = new ArrayList<>();
 
 	@Transactional
-	public void salvar() {
+	public String salvar() {
 		for (Integer autorId : autoresId) {
 			livro.getAutores().add(new Autor(autorId));
 		}
 		dao.salvar(livro);
 		System.out.println("Livro cadastrado: " + livro);
 
+		return "/livros/lista?faces-redirect=true";
+	}
+
+	private void limparFormulario() {
 		this.livro = new Livro();
 		this.autoresId = new ArrayList<>();
 	}

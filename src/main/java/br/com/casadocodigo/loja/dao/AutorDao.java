@@ -7,6 +7,13 @@ import javax.persistence.PersistenceContext;
 
 import br.com.casadocodigo.loja.models.Autor;
 
+/**
+ * 
+ * @author romulo
+ * @description DAO Autor
+ * @date 2017.05.01
+ *
+ */
 public class AutorDao {
 
 	@PersistenceContext

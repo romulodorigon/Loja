@@ -45,6 +45,8 @@ public class AdminLivrosBean {
 		return "/livros/lista?faces-redirect=true";
 	}
 
+	
+	@SuppressWarnings("unused")
 	private void limparFormulario() {
 		this.livro = new Livro();
 		this.autoresId = new ArrayList<>();

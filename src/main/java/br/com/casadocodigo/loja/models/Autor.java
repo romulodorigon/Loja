@@ -7,6 +7,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * 
+ * @author romulo
+ * @description Entidade Autor
+ * @date 2017.05.01
+ *
+ */
 @Entity
 public class Autor implements Serializable {
 

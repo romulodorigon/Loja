@@ -9,6 +9,13 @@ import javax.inject.Inject;
 import br.com.casadocodigo.loja.dao.LivroDao;
 import br.com.casadocodigo.loja.models.Livro;
 
+/**
+ * 
+ * @author romulo
+ * @description Bean Lista Livro
+ * @date 2017.05.06
+ *
+ */
 @Model // refere a @named e @requestedscope
 public class AdminListaLivrosBean {
 

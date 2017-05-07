@@ -3,31 +3,36 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
-<h:form prependId="false">
-	<h:messages />
+<h:form>
 	<div>
 		<h:outputLabel value="Título" />
-		<h:inputText value="#{adminLivrosBean.livro.titulo}" required="true" id="Título"/>
+		<h:inputText value="#{adminLivrosBean.livro.titulo}" required="true"
+			id="titulo" />
+		<h:message for="titulo" />
 	</div>
 	<div>
 		<h:outputLabel value="Descrição" />
-		<h:inputTextarea value="#{adminLivrosBean.livro.descricao}" required="true" id="Descrição"/>
+		<h:inputTextarea value="#{adminLivrosBean.livro.descricao}"
+			required="true" id="descricao" />
+		<h:message for="descricao" />
 	</div>
 	<div>
 		<h:outputLabel value="Número de páginas" />
 		<h:inputText value="#{adminLivrosBean.livro.numeroDePaginas}"
-			required="true" id="Páginas">
-			<f:validateLongRange minimum="80" />
+			required="true" id="paginas">
+			<f:validateLongRange minimum="50" />
 		</h:inputText>
 	</div>
 	<div>
 		<h:outputLabel value="Preço" />
-		<h:inputText value="#{adminLivrosBean.livro.preco}" required="true" id="Preço"/>
+		<h:inputText value="#{adminLivrosBean.livro.preco}" required="true"
+			id="preco" />
+		<h:message for="preco" />
 	</div>
 	<div>
 		<h:outputLabel value="Autores" />
 		<h:selectManyListbox value="#{adminLivrosBean.autoresId}"
-			converter="javax.faces.Integer">
+			converter="javax.faces.Integer" required="true" id="autor">
 			<f:selectItems value="#{adminLivrosBean.autores}" var="autor"
 				itemValue="#{autor.id}" itemLabel="#{autor.nome}" />
 		</h:selectManyListbox>

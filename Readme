@@ -8,3 +8,4 @@ Iniciando o projeto "Crie sua loja online com CDI, JSF, JPA" da Alura
 2017-05-01 17:20 - Criada classe Autores para relacionamento com Livros
 2017-05-01 20:01 - Criada classe AutorDao, feito o mapeamento
 2017-05-06 14:38 - Criada Lista de Livros com autores(video 3:capitulo 2)
+2017-05-07 13:43 - Criada classe Producer Faces Context, como a integração entre JSF e CDI não entende todas as injeções de classes, criamos uma responsável para indicar ao CDI que seja produtora disso, assim, podemos injetar em qualquer lugar. Criamos uma classe com as anotações @RequestedScope(para definir o ciclo de vida), e @Produces, indicando ao CDI ir até lá quando encontrar uma injeção. video 2:capitulo 3)

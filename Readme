@@ -9,3 +9,4 @@ Iniciando o projeto "Crie sua loja online com CDI, JSF, JPA" da Alura
 2017-05-01 20:01 - Criada classe AutorDao, feito o mapeamento
 2017-05-06 14:38 - Criada Lista de Livros com autores(video 3:capitulo 2)
 2017-05-07 13:43 - Criada classe Producer Faces Context, como a integração entre JSF e CDI não entende todas as injeções de classes, criamos uma responsável para indicar ao CDI que seja produtora disso, assim, podemos injetar em qualquer lugar. Criamos uma classe com as anotações @RequestedScope(para definir o ciclo de vida), e @Produces, indicando ao CDI ir até lá quando encontrar uma injeção. video 2:capitulo 3)
+2017-05-07 17:15 - javax.faces.component.UIInput é o responsável pelos inputs text na view do JSF, a ser configurado no arquivo bundle de mensagens ( e tem que ser salvo na pasta META-INF dentro de resources com extensão properties) e tem que ser configurado no faces-config.xml dentro das tags <application> <message-bundle> (video 4:capitulo 3)

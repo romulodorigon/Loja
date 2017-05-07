@@ -3,22 +3,26 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
-<h:form>
+<h:form prependId="false">
+	<h:messages />
 	<div>
 		<h:outputLabel value="Título" />
-		<h:inputText value="#{adminLivrosBean.livro.titulo}" />
+		<h:inputText value="#{adminLivrosBean.livro.titulo}" required="true" id="Título"/>
 	</div>
 	<div>
 		<h:outputLabel value="Descrição" />
-		<h:inputTextarea value="#{adminLivrosBean.livro.descricao}" />
+		<h:inputTextarea value="#{adminLivrosBean.livro.descricao}" required="true" id="Descrição"/>
 	</div>
 	<div>
 		<h:outputLabel value="Número de páginas" />
-		<h:inputText value="#{adminLivrosBean.livro.numeroDePaginas}" />
+		<h:inputText value="#{adminLivrosBean.livro.numeroDePaginas}"
+			required="true" id="Páginas">
+			<f:validateLongRange minimum="80" />
+		</h:inputText>
 	</div>
 	<div>
 		<h:outputLabel value="Preço" />
-		<h:inputText value="#{adminLivrosBean.livro.preco}" />
+		<h:inputText value="#{adminLivrosBean.livro.preco}" required="true" id="Preço"/>
 	</div>
 	<div>
 		<h:outputLabel value="Autores" />
